@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+* ! Style rules for Navbar component 
+**/
+
+nav a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+/**
+* ! Style rules for Form component 
+**/
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  width: 50%;
+}
+
+/**
+* ! Style rules for card component
+**/
+
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 991px) {
+  #card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-control {
+    width: 75%;
+  }
+}
+
+@media (max-width: 568px) {
+  #card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-control {
+    width: 90%;
+  }
+}
+
+.card {
+  padding: 0;
+}
